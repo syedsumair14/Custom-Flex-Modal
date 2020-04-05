@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #555;
+}
+
+.modal {
+    height: 80vh;
+    width: 900px;
+    max-width: 80%;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #777;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    align-self: flex-start;
+    padding-top: 0.5rem;
+}
+
+.modal-body {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-top: 1px solid #777;
+}
+
+.footer .btn {
+    margin-right: 0.5rem;
+}
+
+.footer .btn:last-child {
+    margin-right: initial;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.3em;
+    font-size: inherit;
+    cursor: pointer;
+    color: white;
+}
+
+.btn.btn-primary {
+    background-color: #1CA ;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus
+ {
+    background-color: #0A8 ;
+}
+
+.btn.btn-danger {
+    background-color: #C33 ;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+    background-color: #A11 ;
+}
